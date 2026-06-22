@@ -539,7 +539,7 @@ section{position:relative;z-index:1;padding:6rem 2rem}
 .psd-page .fg label{color:rgba(var(--accent-rgb),0.7)}
 .jsd-page .fg label{color:rgba(var(--accent-rgb),0.7)}
 .fg input,.fg textarea{
-  border-radius:3px;font-family:'Barlow',sans-serif;font-size:15px;
+  border-radius:3px;font-family:'Barlow',sans-serif;font-size:16px;
   padding:10px 14px;outline:none;resize:vertical;transition:border-color .2s;background:#fff;
 }
 .psd-page .fg input,.psd-page .fg textarea{border:1px solid rgba(var(--accent-rgb),0.3);color:var(--accent)}
@@ -656,10 +656,13 @@ footer{position:relative;z-index:1;padding:3rem 2rem}
   .ev-tag{display:none}
   .ev-tag-wrap{grid-column:1 / -1;flex-direction:row;justify-content:flex-end;margin-top:10px}
   .ev-tag-wrap .ev-tag{display:none}
+  .members{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
 }
 @media(max-width:480px){
   section{padding:4rem 1.25rem}
   nav{padding:0 1.25rem}
+  .nav-logo-btn img{height:34px}
+  .nav-divider{margin:0 2px}
   .gallery{grid-template-columns:1fr}
   .g-item:first-child{grid-column:span 1}
   .members{grid-template-columns:repeat(2,1fr)}
